@@ -1,4 +1,4 @@
 ReactDOM.render(
-    <div>Hello gilad</div>,
+    <div>Hello World</div>,
     document.getElementById("root")
 );
