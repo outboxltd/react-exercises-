@@ -1,3 +1,27 @@
 body {
-    background: thistle;
+    background: white;
+}
+
+.SiteBody {
+    background-color: bisque;
+    height: 800px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.SiteHeader {
+    background-color: rgb(189, 187, 185);
+    height: 10%;
+    /* margin: 5%;
+    padding: 5%; */
+}
+
+.MainSite {
+    background-color: rgb(71, 149, 221);
+    height: 80%;
+}
+
+.Footer {
+    background-color: rgb(189, 187, 185);
+    height: 10%;
 }
