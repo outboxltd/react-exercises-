@@ -1,4 +1,17 @@
+class TheBOX extends React.Component {
+    render() {
+        return (
+            <div className="TheBOX">
+                <input type="button" value="click"/>
+
+            </div>
+        );
+    }
+}
+
+
+
 ReactDOM.render(
-    <div>Hello World</div>,
+    <div>  <TheBOX/> </div>,
     document.getElementById("root")
 );
