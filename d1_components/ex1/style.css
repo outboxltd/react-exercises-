@@ -1,3 +1,15 @@
 body {
-    background: rgb(79, 161, 205);
+    background: rgb(30, 174, 252);
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.yalla {
+    background-color: blueviolet;
+}
+
+li {
+    font-size: 40px;
 }
