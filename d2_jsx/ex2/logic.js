@@ -1,57 +1,36 @@
-class BigBox extends React.Component {
+class Loto extends React.Component {
+    loto() {
+        
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+            let rando = getRandomInt(1, 10) 
+            let title;
+            if (rando > 5) {
+                title = ("you won :)" + " the number is " + rando)
+            } else {
+                title = ("you lost :(" + " the number is " + rando)
+            }
+
+        return title;
+    }
     render() {
-        return (
-            <div className="BigBox">
-                
-                <Midlebox/>
-            </div>
+
+        let result = this.loto();
+        
+        return (<div>{result} </div>
         );
     }
 }
 
 
-class Midlebox extends React.Component {
-    render() {
-        return (
-            <div className="Midlebox">
-               <TiradBox/> 
-                
-            </div>
-        );
-    }
-}
 
-class TiradBox extends React.Component {
-    render() {
-        return (
-            <div className="TiradBox">
-               <SmallBox/> 
-               <SmallBox/> 
-
-                
-            </div>
-        );
-    }
-}
-
-
-class SmallBox extends React.Component {
-    render() {
-        return (
-            <div className="SmallBox">
-                
-                
-            </div>
-        );
-    }
-}
 
 
 ReactDOM.render(
-    <div>
-        
-        <BigBox/>,
-
+    <div className="yoo">
+        <Loto />
     </div>,
     document.getElementById("root")
 );
+

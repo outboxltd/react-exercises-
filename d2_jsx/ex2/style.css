@@ -2,37 +2,8 @@ body {
     background: palevioletred;
 }
 
-.yalla {
+.yoo {
     background-color: #fff;
+    font-size: 50px;
 }
 
-.SmallBox {
-    background-color: purple;
-    height: 20px;
-    margin: 5px
-    
-}
-
-
-.TiradBox {
-    background-color: pink;
-    height: 60px;
-    margin: 5px;
-    padding : 5px;
-}
-
-
-.Midlebox {
-    background-color: blue;
-    height: 100px;
-    margin: 5px;
-    padding : 5px;
-
-}
-
-.BigBox {
-    background-color: green;
-    height: 120px;
-    margin: 5px;
-    padding : 5px;
-}
