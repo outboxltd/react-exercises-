@@ -10,16 +10,40 @@ body {
 }
 
 .SiteHeader {
-    background-color: rgb(189, 187, 185);
-    height: 10%;
+    background-color:#00E1FF;
+    height: 30%;
     /* margin: 5%;
     padding: 5%; */
 }
 
+.sun {
+    
+    color: yellow;
+}
+
 .MainSite {
-    background-color: rgb(71, 149, 221);
+    background-color: #1D2537;
     height: 80%;
 }
+
+.Today {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.Tomorrow {
+
+}
+
+.InTwoDays {
+
+}
+
+.In3Days {
+
+}
+
 
 .Footer {
     background-color: rgb(189, 187, 185);
