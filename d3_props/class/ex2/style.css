@@ -1,9 +1,32 @@
 body {
-    background: palevioletred;
+    background: rgb(30, 174, 252);
 }
 
-.yoo {
-    background-color: #fff;
+h1 {
     font-size: 50px;
 }
 
+.fresh {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(211, 59, 59);
+    
+}
+.calm {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(234, 0, 255);
+    
+}
+.advanturs {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(29, 233, 90);
+    
+}
+.happy {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 225, 255);
+    
+}
