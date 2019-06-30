@@ -18,9 +18,7 @@ class TheBox extends React.Component {
         <div className={this.props.CCC}>
 
           <img src={this.props.src} alt={this.props.text} className="pico" ></img>
-
           <h3 className="center"> {this.props.title}</h3>
-
           <p className="center"> {this.props.blabla} </p>
 
 

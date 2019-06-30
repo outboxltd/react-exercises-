@@ -1,0 +1,22 @@
+.btny {
+    
+    border: 1px solid;
+    background-color: rgb(230, 250, 49);
+
+}
+
+
+.YallaApp {
+    border: 1px solid;
+    
+}
+
+.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+
+        /*Button disabled - CSS color class*/
+        color: #c0c0c0;
+        background-color: #ffffff;
+
+        }
