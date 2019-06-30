@@ -8,17 +8,19 @@ class App extends React.Component {
 
   state = {
     name: 'gilad',
-    age : 35,
-    usertype : ""
+    age : 100,
+    usertype : "",
+    count: 0,
+    color : "blue",
+    colors : ["red","green","blue"],
   }
 
 HeClick(e) {
     // console.log(e.target.id)
         console.log(this.state)
-    // console.log(this.state.age)
     this.setState(
         {
-        age:150
+        age:150,
         }
       )
 }
@@ -42,22 +44,40 @@ HeChange = (e) => {
   )
 }
 
+increce = (e) => {
+  this.setState(
+    {
+    count: this.state.count +1,
+    
+    }
+  )
+}
+decrece = (e) => {
+  this.setState(
+    {
+    count: this.state.count -1,
+    }
+  )
+}
+
   render() {
       return(
           <div className="YallaApp">
-             <h1 onCopy={this.WhenCopy}> hi you </h1> 
-             <p> {Math.random()*10} </p>
+             <h1  style={{color:this.state.color}} onCopy={this.WhenCopy}> hi you </h1> 
 
-             <h1 onMouseOver={this.WhenMouseOver}> my name is : {this.state.name} i m {this.state.age} </h1>
+             <p style={{color:this.state.colors[0]}}> {Math.random()*10} </p>
 
-             <button className="btny" onClick={this.HeClick} id="1">click me</button>
+             <h1 onMouseOver={this.WhenMouseOver}> my name is : {this.state.name} i m {this.state.age} year old</h1>
 
+             <button className="btny" onClick={this.HeClick} id="1">change age</button>
+              <h2> {this.state.count}</h2>
             <form>
               <input type="text" onChange={this.HeChange}/>
             </form>
             <h1> {this.state.usertype}</h1>
             <h1> {this.state.usertype}</h1>
-
+            <button onClick={this.increce}>+</button>
+            <button onClick={this.decrece}>-</button>
           </div>
       )
   }  
