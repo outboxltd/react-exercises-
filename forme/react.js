@@ -65,7 +65,7 @@ decrece = (e) => {
           <div className="YallaApp">
              <h1  style={{color:this.state.color}} onCopy={this.WhenCopy}> hi you </h1> 
 
-             <p style={{color:this.state.colors[0]}}> {Math.random()*10} </p>
+             <p style={{color:this.state.colors[0]}}> {Math.floor(Math.random()*10)} </p>
 
              <h1 onMouseOver={this.WhenMouseOver}> my name is : {this.state.name} i m {this.state.age} year old</h1>
 
