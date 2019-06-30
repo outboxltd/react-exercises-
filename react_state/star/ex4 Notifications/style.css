@@ -1,0 +1,29 @@
+body {
+  background: thistle;
+  text-align: center;
+}
+
+.container {
+  background-color: blueviolet;
+  height: 2em;
+  border: 2px solid black;
+  /* margin: 2%; */
+  text-align: center;
+}
+
+.logos {
+  position: relative;
+  display: inline-flex;
+  margin: 0 1% 0 1%;
+  width: 300px;
+  height: 32px;
+}
+
+.span {
+  background-color: white;
+  border-radius: 50%;
+  height: 15px;
+  width: 19px;
+
+  transform: translateX(-87%);
+}
