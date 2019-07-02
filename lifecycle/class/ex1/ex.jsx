@@ -3,7 +3,8 @@ class Box extends React.Component {
         super(props);
         this.state = {
             backgroundColor: "yellow",
-            backrountStack: ["red", "green", "blue", "purple", "pink", "gray", "blue", "purple"]
+            backrountStack: ["red", "green", "blue", "purple", "pink", "gray", "blue", "purple"],
+            TheClass : "ragil"
         }
     }
 
@@ -21,23 +22,19 @@ class Box extends React.Component {
     }
 
     componentDidUpdate() {
-        // let n = 0;
-        // setInterval(() => {
-        //      if (n > 6) {
-        //          n = 0;
-        //      }   
-        //     n++
-        //     this.setState({
-        //         backgroundColor: (this.state.backrountStack[n])
-        //     });
-        // }, 1000)       
+        setTimeout(() => {
+           this.setState({
+            TheClass: "igul"
+           });
+       }, 4000)
       }
-
 
 
     render() {
 
-        return <div style={{backgroundColor: this.state.backgroundColor} }>{this.props.children}</div>
+        return <div className={this.state.TheClass} style={{backgroundColor: this.state.backgroundColor }}>
+            {this.props.children}
+            </div>
 
     }
 }
