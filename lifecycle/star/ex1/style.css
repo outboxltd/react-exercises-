@@ -1,12 +1,12 @@
 .ragil {
     height: 200px;
     width: 200px;
+    display: none;
    
 }
 
 
-.igul{
-    border-radius: 50%;
+.show{
     height: 200px;
     width: 200px;
 }
