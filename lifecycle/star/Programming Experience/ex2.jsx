@@ -34,6 +34,7 @@ class Radio extends React.Component {
       };
     }
   
+    // logic
     isProgramer(select) {
       if (select === "No") {
         this.setState({ knowsJava: true, knowsPython: true });
