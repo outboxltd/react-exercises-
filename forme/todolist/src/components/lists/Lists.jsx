@@ -2,6 +2,8 @@ import React from "react";
 import { Accordion } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import Taskbbar from "../taskbbar/Taskbbar"
+
 
 
 class Lists extends React.Component {
@@ -9,7 +11,7 @@ class Lists extends React.Component {
         super();
 
         this.state = {
-            title: "WRITE YOUR FIRST TASK",
+            title: "WRITE YOUR  cool FIRST TASK",
             done : "eat sleep rave repeat"
         };
 
@@ -20,15 +22,22 @@ class Lists extends React.Component {
 
     SayHello(e) {
         this.setState({
-            title: "WRITE YOUR FIRST TASK KAPARA",
+            title: "$$$$$$$$$ ",
 
         });
     }
+
+    myCallback = (e) => {
+        // console.log("data is " + e.target.value)
+
+        this.setState({ title: e.target.value});
+       }
 
     render() {
         return (
             <div>
 
+            <Taskbbar callbackFromParent={this.myCallback}/>
 
                 <Accordion defaultActiveKey="0">
                     <Card>

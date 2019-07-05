@@ -1,8 +1,10 @@
-import React from "react";
+// import React from "react";
+import React, { Component } from 'react';
+
 import { Button } from 'react-bootstrap';
 
 
-class Header extends React.Component {
+class Header extends Component {
     constructor() {
         super();
 
@@ -27,9 +29,12 @@ class Header extends React.Component {
             <div>
                  <h1> {this.state.title}</h1> 
 
-                <i id="logo" className="fas fa-list-alt"></i>
+                {/* <i id="logo" className="fas fa-list-alt"></i> */}
 
-                 <Button variant="info" onClick={this.SayHello}>sayhello</Button>
+                 <Button variant="info" onClick={this.SayHello}>{this.state.title}</Button>
+
+
+                 <h1>{this.props.name}</h1>
 
             </div>
         )

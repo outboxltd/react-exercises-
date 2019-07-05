@@ -1,9 +1,8 @@
 import React from 'react';
-// import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.css';
-import Header from "./components/header/Header"
-import Lists from "./components/lists/Lists"
-import Footer from "./components/footer/Footer"
+// import React, { Component } from 'react';
+// import 'bootstrap/dist/css/bootstrap.css';
+import Container from "./components/container/Container"
+
 
 import './App.css';
 
@@ -14,13 +13,7 @@ function App() {
       
       
       
-      <Header/>
-      <Lists/>
-
-
-
-
-      <Footer/>
+      <Container/>
     
 
 
