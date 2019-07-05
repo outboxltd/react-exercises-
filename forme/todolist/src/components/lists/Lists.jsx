@@ -23,9 +23,7 @@ class Lists extends React.Component {
 
 
     myCallback = (e) => {
-    
         this.setState({ title: e.target.value});
-        
        }
 
     render() {
