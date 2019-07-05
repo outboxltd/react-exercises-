@@ -31,7 +31,7 @@ class Taskbbar extends Component {
 
                 <input type="text" name="" id="" placeholder=          {this.state.askuser} onChange={this.UserType} />
                 
-                <button onClick={this.props.callbackFromParent} value={this.state.task}>buttonONchild</button>
+                <button onClick={this.props.callbackFromParent} value={this.state.task}>add task</button>
             </div>
         );
     }

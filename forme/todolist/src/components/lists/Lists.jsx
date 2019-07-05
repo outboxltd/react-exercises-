@@ -11,26 +11,21 @@ class Lists extends React.Component {
         super();
 
         this.state = {
-            title: "WRITE YOUR  cool FIRST TASK",
+            // title: [],
+            title: "WRITE YOUR  FIRST TASK",
             done : "eat sleep rave repeat"
         };
 
-        this.SayHello = this.SayHello.bind(this);
+
 
     } // end of constructor
 
 
-    SayHello(e) {
-        this.setState({
-            title: "$$$$$$$$$ ",
-
-        });
-    }
 
     myCallback = (e) => {
-        // console.log("data is " + e.target.value)
-
+    
         this.setState({ title: e.target.value});
+        
        }
 
     render() {
